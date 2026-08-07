@@ -1,0 +1,102 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ss-libev-cm
+  namespace: iron-chain-smart-risk-dev
+data:
+  config.json: |
+    {
+    "server":"0.0.0.0",
+    "server_port":9000,
+    "local_address": "0.0.0.0",
+    "local_port":1080,
+    "password":"password0",
+    "timeout":300,
+    "method":"aes-256-gcm",
+    "fast_open":false,
+    "nameserver":"10.96.0.10",
+    "mode":"tcp_and_udp"
+    }
+  startup.sh: |
+    ss-server -c  /etc/shadowsocks-libev/config.json &
+    ss-local -c /etc/shadowsocks-libev/config.json
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ss-libev
+  namespace: iron-chain-smart-risk-dev
+  labels:
+    app: ss-libev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ss-libev
+  template:
+    metadata:
+      labels:
+        app: ss-libev
+    spec:
+      initContainers:
+        - name: install
+          image: busybox
+          command:
+            - /bin/sh
+            - -c
+            - mkdir -p /etc/shadowsocks-libev
+      containers:
+        - name: ss-libev
+          command:
+            - /bin/sh
+            - -c
+            - sh /app/bin/startup.sh
+          image: 'teddysun/shadowsocks-libev'
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 1080
+              name: tcp-port
+              protocol: TCP
+            - containerPort: 1080
+              name: udp-port
+              protocol: UDP
+          volumeMounts:
+            - name: config-volume
+              mountPath: /etc/shadowsocks-libev/config.json
+              subPath: config.json
+            - name: config-volume
+              mountPath: /app/bin/startup.sh
+              subPath: startup.sh
+      volumes:
+        - name: config-volume
+          configMap:
+            name: ss-libev-cm
+            items:
+              - key: config.json
+                path: config.json
+              - key: startup.sh
+                path: startup.sh
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ss-libev-np
+  namespace: iron-chain-smart-risk-dev
+spec:
+  ports:
+    - name: tcp-port
+      nodePort: 32158
+      port: 1080
+      protocol: TCP
+      targetPort: 1080
+    - name: upd-port
+      nodePort: 32158
+      port: 1080
+      protocol: UDP
+      targetPort: 1080
+  selector:
+    app: ss-libev
+  sessionAffinity: None
+  type: NodePort

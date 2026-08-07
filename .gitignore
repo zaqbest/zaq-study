@@ -1,0 +1,47 @@
+#target files
+
+/target/*
+
+/*/target/*
+
+#binary output files
+
+/bin/*
+
+/*/bin/*
+
+#src code generated
+
+/src/generated/*
+
+/*/src/generated/*
+/*/src/main/generated/*
+#build files
+
+/build/*
+/*/*/build/
+/*/build/*
+
+#testing output files
+
+/test-output/*
+
+/*/test-output/*
+
+/out/*
+
+/*/out/*
+
+.gradle
+
+.classpath
+
+/.idea/*
+.project
+/*/.settings/*
+.settings
+
+_book/*
+node_modules
+.DS_Store
+
