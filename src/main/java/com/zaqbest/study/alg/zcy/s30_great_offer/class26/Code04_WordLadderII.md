@@ -65,4 +65,4 @@ wordlist = {"hot","dot","dog","lot","log","cog"}
 ```
 
 #### distance表图示
-![1660885427144.jpg](https://pic.zaqbest.com/i/2022/08/19/62ff19d632eed.jpg)
+![1660885427144.jpg](https://assets.zaqbest.com/2022/08/19/62ff19d632eed.jpg)

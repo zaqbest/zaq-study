@@ -1,9 +1,9 @@
 ### 一维数组的情况
 有序表实现
-![](https://pic.zaqbest.com/i/2023/01/25/63d13b77ce940.png)
+![](https://assets.zaqbest.com/2023/01/25/63d13b77ce940.png)
 
 ### 二维数组的情况，使用压缩数组技巧变成一维数组
-![](https://pic.zaqbest.com/i/2023/01/25/63d13b774b983.png)
+![](https://assets.zaqbest.com/2023/01/25/63d13b774b983.png)
 
 计算行数
 0-0， 0-1， 0-2，0.N-1

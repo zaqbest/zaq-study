@@ -11,6 +11,6 @@
 
 2,依次尝试前0个变成y,前1个变成y, 前3个变成y;中间有N(0..)变成x的情况
 3，把上述所有的结果取最小值
-![](https://pic.zaqbest.com/i/2022/12/22/63a3cede94325.png)
+![](https://assets.zaqbest.com/2022/12/22/63a3cede94325.png)
 
-![](https://pic.zaqbest.com/i/2022/12/22/63a3cede1c6b8.png)
+![](https://assets.zaqbest.com/2022/12/22/63a3cede1c6b8.png)

@@ -1,1 +1,1 @@
-![1663041522288.jpg](https://pic.zaqbest.com/i/2022/09/13/632000165091f.jpg)
+![1663041522288.jpg](https://assets.zaqbest.com/2022/09/13/632000165091f.jpg)

@@ -18,7 +18,7 @@ public class Problem_0042_TrappingRainWater {
 		int water = 0;
 		while (L <= R) {
 			if (leftMax <= rightMax) {
-				water += Math.max(0, leftMax - arr[L]);
+				water += Math.max(0, leftMax - arr[L]); //如果左侧没有我高，我就接不到雨水了
 				leftMax = Math.max(leftMax, arr[L++]);
 			} else {
 				water += Math.max(0, rightMax - arr[R]);

@@ -1,5 +1,5 @@
 ### 斜率优化示意图
-![](https://pic.zaqbest.com/i/2022/05/09/6278b437db3b7.png)
+![](https://assets.zaqbest.com/2022/05/09/6278b437db3b7.png)
 
 a = 18  
 b = 21  
@@ -9,7 +9,7 @@ n = 6
 14，,15，,16 不需要减去小尾巴
 
 ### 普通位置的依赖关系
-![](https://pic.zaqbest.com/i/2022/06/09/62a15f4e34e29.png)
+![](https://assets.zaqbest.com/2022/06/09/62a15f4e34e29.png)
 
 ### 学习到的内容
  - 观察枚举行为能否去掉

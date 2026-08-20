@@ -30,7 +30,7 @@ public class Code04_CompleteTreeNodeNumber {
 		if (curLevel == allLevel) {
 			return 1;
 		}
-		//![WechatIMG122.png](https://pic.zaqbest.com/i/2022/06/09/62a1f6b3901de.png)
+		//![WechatIMG122.png](https://assets.zaqbest.com/2022/06/09/62a1f6b3901de.png)
 		if (mostLeftLevel(node.right, curLevel + 1) == allLevel) {
 			return (1 << (allLevel - curLevel)) + bs(node.right, curLevel + 1, allLevel);
 		} else {

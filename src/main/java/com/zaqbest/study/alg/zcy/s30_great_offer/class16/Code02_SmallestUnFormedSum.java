@@ -61,7 +61,7 @@ public class Code02_SmallestUnFormedSum {
 			dp[i][0] = true;
 		}
 		dp[0][arr[0]] = true;
-		//![](https://pic.zaqbest.com/i/2022/06/09/62a1f7c2e14a6.png)
+		//![](https://assets.zaqbest.com/2022/06/09/62a1f7c2e14a6.png)
 		for (int i = 1; i < N; i++) {
 			for (int j = 1; j <= sum; j++) {
 				dp[i][j] = dp[i - 1][j] //不使用[i]

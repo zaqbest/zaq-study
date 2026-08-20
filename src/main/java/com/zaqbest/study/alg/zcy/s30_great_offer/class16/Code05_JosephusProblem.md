@@ -25,7 +25,7 @@
 那么有对应关系：$y = ((x-1)\%i) + 1$， 通过 $y = (x\% i)$变换得到
 
 推导过程如下图所示：
-![](https://pic.zaqbest.com/i/2022/05/24/628c4988e612f.png)
+![](https://assets.zaqbest.com/2022/05/24/628c4988e612f.png)
 
 
 前号：1 2 3 4 5 6 7
@@ -33,9 +33,9 @@
 m = 10
 
 如何通过【后号】推导出【前号】
-![](https://pic.zaqbest.com/i/2022/05/24/628c4f2a278a9.png)
+![](https://assets.zaqbest.com/2022/05/24/628c4f2a278a9.png)
 
-![](https://pic.zaqbest.com/i/2022/05/24/628c4fdfe1387.png)
+![](https://assets.zaqbest.com/2022/05/24/628c4fdfe1387.png)
 
 图像对应的公式为$$y = ((x-1+s)\%i) + 1$$, 相当于向左移动了s个单位。（左加右减，上加下减）
 

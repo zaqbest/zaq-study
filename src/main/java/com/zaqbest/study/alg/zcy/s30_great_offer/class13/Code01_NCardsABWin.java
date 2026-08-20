@@ -90,7 +90,7 @@ public class  Code01_NCardsABWin {
 		if (cur == a - 1) {
 			return 1.0 * (b - a) / N;
 		}
-		//![](https://pic.zaqbest.com/i/2022/06/09/62a15f4e34e29.png)
+		//![](https://assets.zaqbest.com/2022/06/09/62a15f4e34e29.png)
 		double w = p3(cur + 1, N, a, b)  + p3(cur + 1, N, a, b) * N;
 		if (cur + 1 + N < b) {
 			w -= p3(cur + 1 + N, N, a, b);

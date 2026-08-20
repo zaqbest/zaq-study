@@ -1,6 +1,6 @@
 逆序对的另外一种数组
 
-![](https://pic.zaqbest.com/i/2022/05/23/628af26ac295f.png)
+![](https://assets.zaqbest.com/2022/05/23/628af26ac295f.png)
 
 - 2^1  
 6,4
@@ -31,4 +31,4 @@
 合计17对
 
 ### 举个例子
-![](https://pic.zaqbest.com/i/2022/06/10/62a2ac87327ec.jpg)
+![](https://assets.zaqbest.com/2022/06/10/62a2ac87327ec.jpg)

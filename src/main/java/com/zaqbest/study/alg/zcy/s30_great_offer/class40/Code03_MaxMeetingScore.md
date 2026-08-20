@@ -6,8 +6,8 @@
 3，[25, 99]
 
 依次安排1，2，3号会议
-![IMG_0769.PNG](https://pic.zaqbest.com/i/2022/12/04/638c5797c44b0.png)
+![IMG_0769.PNG](https://assets.zaqbest.com/2022/12/04/638c5797c44b0.png)
 
 
 示例2：
-![IMG_0770.png](https://pic.zaqbest.com/i/2022/12/04/638c58985760d.png)
+![IMG_0770.png](https://assets.zaqbest.com/2022/12/04/638c58985760d.png)

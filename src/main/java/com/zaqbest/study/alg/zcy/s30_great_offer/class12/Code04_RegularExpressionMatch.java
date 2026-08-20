@@ -147,7 +147,7 @@ public class Code04_RegularExpressionMatch {
 					if (s[si] != e[ei] && e[ei] != '.') {
 						ans = process2(s, e, si, ei + 2, dp);
 					} else { // s[si] 可以和 e[ei]配上
-						//![](https://pic.zaqbest.com/i/2022/05/03/627141fc312ff.jpg)
+						//![](https://assets.zaqbest.com/2022/05/03/627141fc312ff.jpg)
 						ans = process2(s, e, si, ei + 2, dp)
 								|| process2(s, e, si + 1, ei, dp);
 					}

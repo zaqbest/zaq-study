@@ -1,5 +1,5 @@
 **计算过程示意图**  
-![](https://pic.zaqbest.com/i/2022/05/12/627ccb9c29002.png)
+![](https://assets.zaqbest.com/2022/05/12/627ccb9c29002.png)
 
 计算步骤
 - 获得树的最大高度
@@ -19,4 +19,4 @@
 $N = 2^h - 1$
 
 ### 举个例子
-![WechatIMG122.png](https://pic.zaqbest.com/i/2022/06/09/62a1f6b3901de.png)
+![WechatIMG122.png](https://assets.zaqbest.com/2022/06/09/62a1f6b3901de.png)

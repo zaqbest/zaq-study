@@ -1,5 +1,5 @@
 ## 图例说明
-![](https://pic.zaqbest.com/i/2023/02/03/63dc6d7aa5b3a.png)
+![](https://assets.zaqbest.com/2023/02/03/63dc6d7aa5b3a.png)
 
 图中的堆是2，3；应该3，2
 
