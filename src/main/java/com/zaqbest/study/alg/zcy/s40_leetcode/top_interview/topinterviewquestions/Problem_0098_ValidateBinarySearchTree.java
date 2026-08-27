@@ -1,5 +1,8 @@
 package com.zaqbest.study.alg.zcy.s40_leetcode.top_interview.topinterviewquestions;
 
+/**
+ * {@link com.zaqbest.study.alg.leetcode.Problem_0098_IsValidBST}
+ */
 public class Problem_0098_ValidateBinarySearchTree {
 
 	public static class TreeNode {

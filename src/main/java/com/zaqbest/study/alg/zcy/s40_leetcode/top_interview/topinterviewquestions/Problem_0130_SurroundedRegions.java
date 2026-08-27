@@ -63,17 +63,21 @@ public class Problem_0130_SurroundedRegions {
 		int N = board.length;
 		int M = board[0].length;
 		for (int j = 0; j < M; j++) {
+			//第一行
 			if (board[0][j] == 'O') {
 				free(board, 0, j);
 			}
+			//最后一行
 			if (board[N - 1][j] == 'O') {
 				free(board, N - 1, j);
 			}
 		}
 		for (int i = 1; i < N - 1; i++) {
+			//第一列
 			if (board[i][0] == 'O') {
 				free(board, i, 0);
 			}
+			//最后一列
 			if (board[i][M - 1] == 'O') {
 				free(board, i, M - 1);
 			}
